@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #0a0a0c;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 210, 63, 0.06), transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(255, 91, 106, 0.06), transparent 45%);
+  color: #e6e8eb;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #ffd23f;
+}
+
+.header h1 span {
+  color: #6a737c;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.header .sub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9aa4ad;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 1px #23252b,
+    0 20px 60px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 664px;
+  height: auto;
+  background: #0d0d0f;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6a737c;
+}
