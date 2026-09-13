@@ -4,7 +4,7 @@
 
 ## 在线试玩
 
-直接打开 [GitHub Pages](https://<你的用户名>.github.io/tank-battle/) 或双击 `index.html` 即可游玩。
+直接打开 [GitHub Pages](https://hush732517.github.io/tank-battle/) 或双击 `index.html` 即可游玩。
 
 ## 玩法
 
@@ -44,7 +44,7 @@ python -m http.server 8000
 
 ## 部署到 GitHub Pages
 
-仓库已包含 `index.html`，在仓库 **Settings → Pages** 中选择分支（`main`）与目录（`/ (root)`），保存后即可通过 `https://<用户名>.github.io/tank-battle/` 访问。
+仓库已包含 `index.html`，在仓库 **Settings → Pages** 中选择分支（`main`）与目录（`/ (root)`），保存后即可通过 `https://hush732517.github.io/tank-battle/` 访问。
 
 ## 文件结构
 
