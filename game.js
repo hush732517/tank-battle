@@ -269,6 +269,7 @@ function canFire(t) {
 }
 
 function playerWeaponLevel() {
+  if (!player) return 1;
   return clamp(player.weaponLevel || 1, 1, 3);
 }
 
@@ -824,6 +825,12 @@ function drawTank(t) {
   ctx.restore();
 }
 
+function drawTanks() {
+  for (const t of allTanks()) {
+    drawTank(t);
+  }
+}
+
 function drawBullets() {
   for (const b of bullets) {
     if (!b.alive) continue;
@@ -1073,4 +1080,5 @@ canvas.addEventListener('mousedown', () => {
 });
 
 // ---------------------------------------------------------------- 启动 --
+buildGrid(); // 预先生成地图，保证菜单页也能正常渲染
 requestAnimationFrame((now) => { last = now; loop(now); });
